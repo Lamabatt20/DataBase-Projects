@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="684.0" prefWidth="867.0" styleClass="root" stylesheets="@../Style/ima.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddEmployeeController">
+   <children>
+      <Label layoutX="56.0" layoutY="29.0" prefHeight="47.0" prefWidth="210.0" text="Add Employee" textAlignment="CENTER" textFill="#506d7b">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="164.0" layoutY="111.0" prefHeight="18.0" prefWidth="48.0" text="ssn" textAlignment="CENTER" textFill="#506d7b">
+         <font>
+            <Font name="Footlight MT Light" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ssntext" layoutX="164.0" layoutY="138.0" prefHeight="26.0" prefWidth="191.0" />
+      <Label layoutX="456.0" layoutY="111.0" text="name" textFill="#506d7b">
+         <font>
+            <Font name="Footlight MT Light" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nametext" layoutX="456.0" layoutY="138.0" prefHeight="26.0" prefWidth="191.0" />
+      <Label layoutX="164.0" layoutY="194.0" prefHeight="27.0" prefWidth="114.0" text="phonenum" textFill="#506d7b">
+         <font>
+            <Font name="Footlight MT Light" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="454.0" layoutY="194.0" prefHeight="27.0" prefWidth="73.0" text="email" textFill="#506d7b">
+         <font>
+            <Font name="Footlight MT Light" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numtext" layoutX="164.0" layoutY="229.0" prefHeight="26.0" prefWidth="191.0" />
+      <TextField fx:id="emailtext" layoutX="456.0" layoutY="229.0" prefHeight="26.0" prefWidth="191.0" />
+      <Label layoutX="164.0" layoutY="290.0" text="Salary" textFill="#506d7b">
+         <font>
+            <Font name="Footlight MT Light" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="460.0" layoutY="290.0" text="Role" textFill="#506d7b">
+         <font>
+            <Font name="Footlight MT Light" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="salarytext" layoutX="164.0" layoutY="329.0" prefHeight="26.0" prefWidth="191.0" />
+      <ChoiceBox fx:id="selectemp" layoutX="456.0" layoutY="329.0" prefHeight="26.0" prefWidth="191.0" />
+      <Button fx:id="add" ellipsisString="" layoutX="319.0" layoutY="494.0" mnemonicParsing="false" onAction="#CreateEmp" prefHeight="47.0" prefWidth="158.0" styleClass="button-color" stylesheets="@../Style/ima.css" text="Create Employee" textFill="#eaeaea" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Footlight MT Light" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+      <HBox layoutX="288.0" layoutY="76.0" prefHeight="37.0" prefWidth="358.0" spacing="80.0">
+         <children>
+            <RadioButton fx:id="Vet" mnemonicParsing="false" onAction="#radioButtonSelect" prefHeight="30.0" prefWidth="78.0" selected="true" text="Vet" textFill="#506d7b">
+               <font>
+                  <Font name="Footlight MT Light" size="20.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Emp" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="Employee" mnemonicParsing="false" onAction="#radioButtonSelect" prefHeight="30.0" prefWidth="134.0" selected="false" text="Employee" textFill="#506d7b" toggleGroup="$Emp">
+               <font>
+                  <Font name="Footlight MT Light" size="20.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </HBox>
+      <Label fx:id="label" layoutX="164.0" layoutY="386.0" prefHeight="27.0" prefWidth="114.0" text="Veteran_id" textFill="#506d7b">
+         <font>
+            <Font name="Footlight MT Light" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="VetId" layoutX="164.0" layoutY="424.0" prefHeight="26.0" prefWidth="191.0" />
+      <Label layoutX="457.0" layoutY="386.0" text="Password" textFill="#506d7b">
+         <font>
+            <Font name="Footlight MT Light" size="20.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passText" layoutX="453.0" layoutY="424.0" prefHeight="26.0" prefWidth="191.0" />
+      <ImageView fitHeight="116.0" fitWidth="125.0" layoutX="727.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/WhatsApp%20Image%202024-01-11%20at%2010.00.04%20PM.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

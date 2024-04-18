@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="884.0" stylesheets="@../Style/ima.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HousingController">
+   <children>
+      <MenuBar layoutX="-4.0" prefHeight="54.0" prefWidth="884.0" styleClass="menubar" stylesheets="@../Style/ima.css">
+         <menus>
+            <Menu mnemonicParsing="false" text="Home">
+               <accelerator>
+                  <KeyCodeCombination alt="DOWN" code="BACK_QUOTE" control="UP" meta="UP" shift="UP" shortcut="UP" />
+               </accelerator>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Services">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Treatment" />
+                  <MenuItem mnemonicParsing="false" text="Veterinary Care" />
+                  <MenuItem mnemonicParsing="false" text="Housing" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Medicine" />
+            <Menu mnemonicParsing="false" text="Owners" />
+            <Menu mnemonicParsing="false" text="Pets" />
+            <Menu mnemonicParsing="false" text="Vaccinations" />
+            <Menu mnemonicParsing="false" text="Dashboard" />
+         </menus>
+      </MenuBar>
+      <Label layoutX="85.0" layoutY="72.0" prefHeight="35.0" prefWidth="135.0" text="Housing" textFill="#506d7b">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="102.0" layoutY="117.0" mnemonicParsing="false" onAction="#AddPet" prefHeight="35.0" prefWidth="135.0" styleClass="button-color" stylesheets="@../Style/ima.css" text="+Add Pet" textFill="#eaeaea">
+         <font>
+            <Font name="Footlight MT Light" size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/11640-200.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView fx:id="TablePet" layoutX="145.0" layoutY="203.0" prefHeight="324.0" prefWidth="654.0">
+         <columns>
+            <TableColumn fx:id="Ownerssn" prefWidth="75.0" text="Owner ssn" />
+            <TableColumn fx:id="Namepet" prefWidth="75.0" text="Name Pet" />
+            <TableColumn fx:id="petid" prefWidth="75.0" text="Pet_ID" />
+            <TableColumn fx:id="Typepet" prefWidth="75.0" text="Type Pet" />
+            <TableColumn fx:id="ToDate" prefWidth="75.0" text="To Date" />
+            <TableColumn fx:id="fromDate" prefWidth="75.0" text="From Date" />
+            <TableColumn fx:id="Description" prefWidth="75.0" text="Description" />
+            <TableColumn fx:id="RoomNum" prefWidth="127.19998779296873" text="Room_Num" />
+         </columns>
+      </TableView>
+      <Button layoutX="687.0" layoutY="153.0" mnemonicParsing="false" onAction="#searchButton" prefHeight="40.0" prefWidth="112.0" styleClass="button-color" stylesheets="@../Style/ima.css" text="Search" textFill="#eaeaea" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Footlight MT Light" size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/icons8-search-50.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="searchtext" layoutX="508.0" layoutY="166.0" prefHeight="26.0" prefWidth="172.0" promptText="Search" />
+      <Button layoutX="407.0" layoutY="541.0" mnemonicParsing="false" onAction="#DeleteButton" styleClass="button-color" stylesheets="@../Style/ima.css" text="Delete" textFill="#eaeaea">
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/icons8-delete-30.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Footlight MT Light" size="16.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="98.0" fitWidth="91.0" layoutX="778.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/WhatsApp%20Image%202024-01-11%20at%2010.00.04%20PM.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

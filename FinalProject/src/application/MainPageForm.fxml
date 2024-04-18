@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="668.0" prefWidth="887.0" stylesheets="@../Style/ima.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainPageFormController">
+   <children>
+      <ImageView fitHeight="579.0" fitWidth="842.0" layoutX="7.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../MainIm.jpeg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="14.0" layoutY="14.0" prefHeight="60.0" prefWidth="850.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" style="-fx-font-size: 18; -fx-font-family: Cambria;" text="Home" />
+          <Menu mnemonicParsing="false" style="-fx-font-size: 18; -fx-font-family: Cambria;" text="Services">
+            <items>
+              <MenuItem mnemonicParsing="false" style="-fx-font-size: 16; -fx-font-family: Cambria;" text="Treatment" />
+                  <MenuItem mnemonicParsing="false" style="-fx-font-family: Cambria; -fx-font-size: 16;" text="Veterinary Care" />
+                  <MenuItem mnemonicParsing="false" style="-fx-font-size: 16; -fx-font-family: Cambria;" text="Vaccines" />
+                  <MenuItem mnemonicParsing="false" style="-fx-font-family: Cambria; -fx-font-size: 16;" text="Housing" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" style="-fx-font-family: Cambria; -fx-font-size: 18;" text="Medicine" />
+            <Menu id="ownersButton" fx:id="ownersButton" mnemonicParsing="false" style="-fx-font-family: Cambria; -fx-font-size: 18;" text="Owners" />
+            <Menu id="petsButton" fx:id="petsButton" mnemonicParsing="false" style="-fx-font-size: 18; -fx-font-family: Cambria;" text="Pets" />
+            <Menu id="dashButton" fx:id="dashButton" mnemonicParsing="false" style="-fx-font-family: Cambria; -fx-font-size: 18;" text="Dashboard" />
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
